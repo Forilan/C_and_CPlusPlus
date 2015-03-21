@@ -1,6 +1,11 @@
 ﻿# reading notes
-  笔记  
 
-  记录了一些东西  
+table of contents
+
+## 《C缺陷与陷阱》
 
 
+## 《C和指针》
+
+
+## 《C专家编程》
