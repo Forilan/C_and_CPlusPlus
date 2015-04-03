@@ -11,14 +11,13 @@ table of contents
 * 强制转换符： static_cast、dynamic_cast、reinterpret_cast、和 const_cast
 
 ## grammar
-* “模版函数”
+* “模版函数” “类模板”
 
-* C++ 基础之 “模版函数”,”类模版”
-http://www.waitingfy.com/archives/260
 
 ## 待整理
 
-
+函数模板的特化
+http://blog.csdn.net/ljq32/article/details/7916723
 
 
 * dynamic_cast
