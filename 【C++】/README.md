@@ -10,11 +10,15 @@ table of contents
 * 重载操作符
 * 强制转换符： static_cast、dynamic_cast、reinterpret_cast、和 const_cast
 
-
-
+## grammar
+* “模版函数”
 
 * C++ 基础之 “模版函数”,”类模版”
 http://www.waitingfy.com/archives/260
+
+## 待整理
+
+
 
 
 * dynamic_cast
