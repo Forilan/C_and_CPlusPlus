@@ -3,7 +3,13 @@
 // 谈谈malloc()和free()		-	malloc()和free()里的学问
 /*
 	http://www.nowamagic.net/librarys/veda/detail/2427
+	真正的原文：
+	http://www.bccn.net/Article/kfyy/cyy/jszl/200608/4238_2.html
+
+	比较深入的文章————浅析malloc（）的几种实现方式：
+	http://www.cnblogs.com/dongzhiquan/archive/2009/06/27/1994838.html
 */
+
 
 /*
 	对于串的顺序存储，有些需要补充说明。串值的存储空间可在程序执行过程中动态分配而得。
