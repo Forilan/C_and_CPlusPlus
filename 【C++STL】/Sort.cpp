@@ -72,6 +72,11 @@ http://www.cnblogs.com/imAkaka/articles/2407877.html
 STL的sort()算法，数据量大时采用Quick Sort，分段递归排序，一旦分段后的数据量小于某个门槛，为避免Quick Sort的递归调用带来过大的额外负荷，
 就改用Insertion Sort。如果递归层次过深，还会改用Heap Sort。本文先分别介绍这个三个Sort，再整合分析STL sort算法(以上三种算法的综合) 
 -- Introspective Sorting(内省式排序)。
+
+详细解说 STL 排序(Sort)
+http://www.cppblog.com/mzty/archive/2005/12/15/1770.html
+
+
 */
 
 
