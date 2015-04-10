@@ -1,6 +1,6 @@
 ﻿
 
-// STL中的常用的vector，map，set，Sort用法
+// STL中的常用的vector，map，set 用法
 /*
 	C++的标准模板库（Standard Template Library，简称STL）是一个容器和算法的类库。容器往往包含同一类型的数据。
 	STL中比较常用的【容器】是vector，set和map，比较常用的【算法】有Sort等。
