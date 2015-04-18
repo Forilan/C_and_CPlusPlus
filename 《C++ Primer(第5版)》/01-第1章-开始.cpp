@@ -65,7 +65,7 @@ int main()
 int main()
 {
 	int sum = 0, value = 0;
-	
+
 	while( std::cin >> value)
 		sum += value;
 
@@ -86,5 +86,39 @@ int main()
 	UNIX 系统中，包括Mac OS X 系统中， Ctrl + D
 */
 
-// __________________________2 折半查找 __________________________
-//  默写练习次数：
+// 1.4.4 用if语句写一个程序，来统计在输入中每个值【连续出现】了多少次；
+
+#include <iostream>
+
+int main()
+{
+	int value,nextValue,count;
+	if(std::cin >> value)
+	{
+		count = 1;
+		while(std::cin >> nextValue)
+		{
+			if( nextValue == value )
+			{
+				++count;
+			}else{
+				std::cout << value << " has show " << count << " time" << endl;
+				value = nextValue;
+				count = 1;
+			}
+		}
+		std::cout << value << " has show " << count << " time" << endl;
+	}
+
+	return 0;
+}	
+
+// e.g.
+cin:
+42 42 42 42 42 55 55 62 100 100 100
+cout:
+42 has show 5 times
+55 has show 5 times
+62 has show 5 times
+100 has show 5 times
+
