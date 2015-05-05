@@ -24,7 +24,7 @@ strcat(r,t);
 // warning! 我们不敢确保 r >= s + t + 1  __________________________ __________________________
 char r[100];
 strcpy(r,s);
-strcat(r,t);
+strcat(r,t);		// 用于粘贴两个非空字符串
 
 // 使用动态分配内存  __________________________ __________________________
 char *r = malloc(strlen(s) + strlen(t) + 1);
@@ -32,7 +32,6 @@ if(r == NULL)
 {
 	exit(1);
 }
-
 strcpy(r,s);
 strcat(r,t);
 
@@ -44,7 +43,9 @@ free(r);
 
 
 
-// 输出   __________________________ 
+
+
+// 输出   ____________________________________________________ 
 char hello[] = "hello";
 printf("%s\n",hello);
 // 等价于下面这句：
@@ -55,3 +56,12 @@ printf("%s\n",&hello[0]);
 
 
 // __________________________ C++语言 __________________________
+
+
+std::string EMQusetionManager::getValueFromString(int prefix,const char* suffix)
+{
+	char name[80];
+	sprintf(name, "%i%s", prefix, suffix);
+	path = name;
+	return path;
+}
