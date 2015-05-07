@@ -11,9 +11,7 @@
 */
 
 
-/*
 
-*/
 
 
 // __________________________ 如何使用 宏 CCAssert(cond, msg) __________________________
@@ -72,33 +70,3 @@ extern bool CC_DLL cc_assert_script_compatible(const char *msg);
 
 
 
-
-// __________________________ 宏 assert(_Expression)  定义 __________________________
-#define assert(_Expression) (void)( (!!(_Expression)) || (_wassert(_CRT_WIDE(#_Expression), _CRT_WIDE(__FILE__), __LINE__), 0) )
-
-// ~~~~~~~~~~~~~~~~~~~~~~~~~ 说明 ~~~~~~~~~~~~~~~~~~~~~~~~~
-/*
-	下面的代码意思是定义如下函数（此函数用于打印出出错信息）：【看不懂啥意思】
-*/    
-(_wassert(_CRT_WIDE(#_Expression), _CRT_WIDE(__FILE__), __LINE__), 0)
-
-
-
-// __________________________  C标准预定义宏  如何使用 __________________________
-#include   <iostream> 
-using   namespace   std; 
-
-void   main(void) 
-{ 
-	cout   <<   __FILE__   		<<   endl;   			//   当前文件路径 
-	cout   <<   __LINE__   		<<   endl;   			//   当前文件编译行数 
-	cout   <<   __DATE__   		<<   endl;   			//   编译日期 
-	cout   <<   __TIME__   		<<   endl;   			//   编译时间 
-	cout   <<   __FUNCTION__   	<<   endl; 				//   函数名称
-} 
-
-/*
-	我们可以在debug的时候输入更多有意义的调试信息
-	如下面的：
-*/
-NSLog(@"%s:%d, %s",__FILE__, __LINE__, __FUNCTION__);     
