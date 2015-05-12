@@ -64,6 +64,38 @@ manList.push_back(thisman);           //加入第二个元素
 
 manList.clear();           //清空
 
+// 赋值
+// 下标赋值-【不负责分配内存】
+manList[0] = thisman; 
+
+// push_back 赋值-【负责分配内存】
+manList.push_back(thisman); 
+
+// 在vector的末尾插入一个元素
+vector<int> v;
+v.push_back(1);     //v里面是： 1
+v.push_back(2);     //v里面是： 1 , 2
+v.push_back(3);     //v里面是： 1 , 2 , 3
+
+/*
+  vector是用数组实现的，每次执行push_back操作，相当于底层的数组实现要重新分配大小（即先free掉原存储，后重新malloc）；
+  这种实现体现到vector实现就是每当push_back一个元素,都要重新分配一个大一个元素的存储，然后将原来的元素拷贝到新的存储，
+  之后在拷贝push_back的元素，最后要析构原有的vector并释放原有的内存。
+*/
+
+
+// 改变容量 和 大小===============================================
+// 要想同时改变vector的容量和大小，你可以用push_back自动加，也可以用resize来自定义大小，
+// 比如v.resize(5)就是把这个vector的大小变成5。 
+
+// 如果你 
+v.resize(2); 
+v.push_back(1); 
+v[1] = 2; 
+// 那么这个vector的元素就变成{0,2,1} 
+cout << v[0] << endl; //这里的结果就是0 
+cout << v[1] << endl; //这里的结果就是2
+
 
 // 3.遍历
 // 第1种方法
