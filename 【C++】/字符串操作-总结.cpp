@@ -62,6 +62,39 @@ std::string EMQusetionManager::getValueFromString(int prefix,const char* suffix)
 {
 	char name[80];
 	sprintf(name, "%i%s", prefix, suffix);
-	path = name;
+	std::string path = name;
 	return path;
 }
+
+/*
+	如果出现边界错误，程序会崩掉，但是会蹦在一个奇怪的地方	
+*/
+
+void strToFile()
+{
+
+	// 字符串通过Java传递
+	std::string toJava = buffer.GetString();
+
+	std::string testSTR = toJava;
+	char str10[2]; 
+	sprintf(str10, "%s",testSTR.c_str());			// 这里越界了
+
+
+#if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)  
+
+	UseJNI::JNIManager()->sendStringToJava(toJava);
+
+#endif 
+
+#ifndef YM_BURN_ANDROID
+	// 字符串写入文件---写到 F:\cocos2d-x-2.2.3-xtc-0.6\debug-win32文件夹里
+	FILE* file = fopen(path.c_str(), "wb");  
+	if (file)  
+	{  
+		fputs(toJava.c_str(), file); 				// 但是程序会在这里蹦掉，让人不好定位错误。
+		fclose(file);  
+	}  
+#endif // YM_BURN_ANDROID
+
+}	
