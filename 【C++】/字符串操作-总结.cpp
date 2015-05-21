@@ -57,7 +57,7 @@ printf("%s\n",&hello[0]);
 
 // __________________________ C++语言 __________________________
 
-
+// 只调用 sprintf() 一次的时候  __________________________
 std::string EMQusetionManager::getValueFromString(int prefix,const char* suffix)
 {
 	char name[80];
@@ -65,6 +65,26 @@ std::string EMQusetionManager::getValueFromString(int prefix,const char* suffix)
 	std::string path = name;
 	return path;
 }
+
+
+// for循环调用 sprintf() 的时候,不进行覆盖study_word  __________________________
+void forSprintf()
+{
+	char study_word[200];
+
+	int offset =0;
+	for (int i = 0; i < m_eatFruit.size(); ++i )
+	{
+		int which = m_eatFruit[i];
+		offset += sprintf(study_word + offset, "%s,",FRUIT_NAME[which].c_str());
+	}
+}
+/*
+	for循环中每次调用函数sprintf()往字符数组写数据的时候，study_word+foffset为每次写入数据的开始地址.
+	最终的结果是所有产生的数据都被存入数组中。
+*/
+
+
 
 /*
 	如果出现边界错误，程序会崩掉，但是会蹦在一个奇怪的地方	
