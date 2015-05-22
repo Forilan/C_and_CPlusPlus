@@ -1,5 +1,5 @@
 
-// 条款18：让接口容易被正确使用，不易被误用  ______  Make interfaces easy to use correctly and hard to use incorrectly
+// 条款 02：  尽量使用C++风格的类型转换 ______  
 
 
 /* 	______________________   ______________________  */
