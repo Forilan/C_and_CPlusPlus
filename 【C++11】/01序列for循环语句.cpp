@@ -6,7 +6,7 @@
 
 // 序列for循环
 /*
-	序列for循环
+	序列for循环 
 	在C++中for循环可以使用类似java的简化的for循环，
 	可以用于遍历数组，容器，string以及由begin和end函数定义的序列（即有Iterator），示例代码如下：
 */
