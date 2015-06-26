@@ -13,6 +13,42 @@
 #include <vector>
 using namespace std;
 
+
+// __________________________ 容器赋值 __________________________ 
+
+// 01- 空容器-赋值。
+vector<vector<int>> matrix;
+
+matrix.push_back(vector<int> ());
+// 等价于 下面这几句：
+vector<int> line;
+matrix.push_back(line);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*
  一个vector类似于一个动态的一维数组。
  这里的声明的a包含0个元素，既a.size()的值为0，但它是动态的，其大小会随着数据的插入和删除改变而改变。
