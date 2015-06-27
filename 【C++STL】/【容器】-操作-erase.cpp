@@ -15,7 +15,9 @@ using std::vector;
 	erase() 删除一个元素的操作是被删除元素后面的所有元素依次,向前移动一个元素的位置，
 	然后删除最后一个元素,时间复杂度为O(n^2)。
 */
-
+	
+// C++ 想要删除一个vector中某一个对象。 知道该v[]的下标。 怎么做 ？
+Vector.erase(Vector.begin() + 下标);
 
 
 vector<int> v;						// 正如从前
