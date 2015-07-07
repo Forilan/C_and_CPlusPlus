@@ -79,8 +79,12 @@ http://www.cppblog.com/mzty/archive/2005/12/15/1770.html
 
 */
 
+// 对容器进行排序
+vector<int> nums1;
+sort(nums1.begin(), nums1.end());
+
+// 对数组进行排序
 
 
-
-
+sort(wordPool, wordPool+ArrLen(wordPool));
 
