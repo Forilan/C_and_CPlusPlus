@@ -26,6 +26,12 @@ v.erase(remove(v.begin(), v.end(), 99), v.end());		// 真的删除所有  等于
 cout << v.size();
 
 
+//  删除 一个排序数组 里面相邻的重复元素
+
+sort(nums.begin(), nums.end());		// 排序
+nums.erase(unique(nums.begin(), nums.end()), nums.end());
+
+
 /*
 	把remove的返回值作为erase区间形式第一个实参传递很常见，这是个惯用法。
 	事实上，remove和erase是亲密联盟，这两个整合到list成员函数remove中。
