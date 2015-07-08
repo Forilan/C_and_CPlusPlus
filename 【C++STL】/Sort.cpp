@@ -63,7 +63,7 @@ void randomSortBySTL()
 
 
 
-
+sort(nums.begin()+i+1, nums.end()); 
 
 /*
 STL sort源码剖析
@@ -78,6 +78,14 @@ http://www.cppblog.com/mzty/archive/2005/12/15/1770.html
 
 
 */
+
+sort(vect.begin(), vect.end());		//此时相当于调用
+sort(vect.begin(), vect.end(), less<int>() );		// 从小到大排列
+
+sort(vect.begin(), vect.end(), greater<int>() );	// 从大到小排列
+
+less<int>()
+greater<int>()
 
 // 对容器进行排序
 vector<int> nums1;
