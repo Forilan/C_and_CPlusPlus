@@ -25,6 +25,17 @@ vector<int> line;
 matrix.push_back(line);
 
 
+//定义并初始化二维数组
+vector<vector<int>> ivec(m ,vector<int>(n,0)); //m*n的二维vector，所有元素初始化为0
+
+//定义并初始化三维数组
+vector<vector<vector<int>>> ivec(m, vector<vector<int>>(n,vector<int>(j,0))); //m*n*j的二维vector，所有元素初始化为0
+
+//定义并初始化三维数组,第三维进行空赋值
+vector<vector<vector<int>>> ivec(m, vector<vector<int>>(n, vector<int>())); //m*n*j的二维vector，所有元素初始化为0
+
+
+
 
 
 
