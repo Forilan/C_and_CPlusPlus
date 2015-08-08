@@ -6,9 +6,19 @@
 #include <algorithm>
 
 using std::vector;
+	
+// ____________________________________________________  find ____________________________________________________ 
 
+	list<string> Fruit;
+	Fruit.push_back("Apple");
+    Fruit.push_back("Pineapple");
+    Fruit.push_back("Star Apple");
 
-
+	list<string>::iterator FruitIterator = find (Fruit.begin(), Fruit.end(), "Pineapple");
+ 
+    if (FruitIterator == Fruit.end()) {
+        cout << "Fruit not found in list" << endl;
+    }
 
 // ____________________________________________________  find_if ____________________________________________________ 
 
