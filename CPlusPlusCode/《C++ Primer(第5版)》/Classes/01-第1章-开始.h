@@ -71,10 +71,24 @@ int sumTwoNum()
 	cocos2dx 游戏 在 android 运行时，在 ondestory() 打印的LOG信息,有的时候看不到，估计就是 游戏异常退出时，缓存区被干掉了。
 */
 
+// __________________________1.3 注释简介 __________________________
+int main2Comments()
+{
+	std::cout << "/*" << std::endl;
+	std::cout << "*/" << std::endl;
+	// std::cout << /* "*/" */;			// 这条 会编译错误。
+	std::cout << /* "*/" /* "/*" */ << std::endl ;
+
+	getchar();
+
+	return 0;
+}	
+
+
 // __________________________1.4 控制流 __________________________
 
 // 1.4.3 读取数量不定的输入数据
-int main2()
+int addcin2sum()
 {
 	int sum = 0, value = 0;
 
@@ -82,7 +96,7 @@ int main2()
 		sum += value;
 
 	std::cout << "Sum is: " << sum << std::endl;
-
+	getchar();
 	return 0;
 }	
 
@@ -100,7 +114,7 @@ int main2()
 
 // 1.4.4 用if语句写一个程序，来统计在输入中每个值【连续出现】了多少次；
 
-int main1()
+int cuntNumShowTimes()
 {
 	int value,nextValue,count;
 	if(std::cin >> value)
@@ -119,6 +133,7 @@ int main1()
 		}
 		std::cout << value << " has show " << count << " time" << endl;
 	}
+	getchar();	
 
 	return 0;
 }	
@@ -126,7 +141,7 @@ int main1()
 /*
 e.g.
 cin:
-42 42 42 42 42 55 55 62 100 100 100
+42 42 42 42 42 55 55 62 100 100 100		[Ctrl + Z ,然后按 Enter ]
 cout:
 42 has show 5 times
 55 has show 5 times
@@ -135,4 +150,16 @@ cout:
 
 */
 
+// __________________________1.5 类简介 __________________________
 
+/*
+	在C++中，通过定义一个类来定义自己的数据结构。一个类定义了一个类型，以及与其关联的一组操作。
+	类机制是C++最重要的特性之一。 实际上，C++ 最初的一个设计焦点就是能定义使用上像内置类型一样自然的类类型（class type）。
+*/
+
+/*
+	包含来自标准库的头文件时，应该用 <> 包含头文件名。
+	对于不属于标准库的头文件，则引用双引号""包围。
+
+
+*/
