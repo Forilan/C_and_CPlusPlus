@@ -15,7 +15,7 @@
 
 int _tmain(int argc, _TCHAR* argv[])
 {
-	defaultInit();
+	const_referenece_study1();
 
 	getchar();		// ·ÀÖ¹ ´°¿ÚÉÁµô
 
