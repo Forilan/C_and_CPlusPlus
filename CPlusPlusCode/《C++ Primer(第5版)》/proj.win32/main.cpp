@@ -7,15 +7,15 @@
 #if 0		
 
 #include "01-第1章-开始.h"
-
+#include "02-第2章-变量和基本类型.h"
 #endif
 
 
-#include "02-第2章-变量和基本类型.h"
+#include "03-第3章-字符串、向量和数组.h"
 
 int _tmain(int argc, _TCHAR* argv[])
 {
-	const_referenece_study1();
+	vector_study_other_operational();
 
 	getchar();		// 防止 窗口闪掉
 

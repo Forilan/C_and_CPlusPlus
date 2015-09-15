@@ -26,6 +26,9 @@
     <ClInclude Include="..\Classes\02-第2章-变量和基本类型.h">
       <Filter>Classes</Filter>
     </ClInclude>
+    <ClInclude Include="..\Classes\03-第3章-字符串、向量和数组.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
