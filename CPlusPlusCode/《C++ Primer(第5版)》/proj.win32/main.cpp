@@ -20,6 +20,8 @@
 
 
 #include "09-第9章-顺序容器.h"
+#include "10-第10章-泛型算法.h"
+
 
 int _tmain(int argc, _TCHAR* argv[])
 {

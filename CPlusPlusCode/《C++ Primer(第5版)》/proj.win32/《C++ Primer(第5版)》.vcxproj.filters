@@ -35,6 +35,9 @@
     <ClInclude Include="..\Classes\09-第9章-顺序容器.h">
       <Filter>Classes</Filter>
     </ClInclude>
+    <ClInclude Include="..\Classes\10-第10章-泛型算法.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
