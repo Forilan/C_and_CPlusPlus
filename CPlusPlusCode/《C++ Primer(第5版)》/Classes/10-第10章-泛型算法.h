@@ -47,6 +47,8 @@ void algorithm_study_open()
 	
 */ 
 
+  
+
 
 
 
