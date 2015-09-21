@@ -25,7 +25,7 @@
 
 int _tmain(int argc, _TCHAR* argv[])
 {
-	//string_c_style_function();
+	algorithm_study_sort_unique_erase();
 
 	getchar();		// ·ÀÖ¹ ´°¿ÚÉÁµô
 

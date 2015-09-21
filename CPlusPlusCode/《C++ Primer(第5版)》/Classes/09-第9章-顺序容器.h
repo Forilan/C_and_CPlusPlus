@@ -201,7 +201,7 @@ void vector_study_init()
 #endif
 
 	vector<int> v7(10, -1);		// 10个 int 元素， 都初始化为 -1
-	vector<int> v7(10);			// 10个 int 元素， 都初始化为 0
+	vector<int> v8(10);			// 10个 int 元素， 都初始化为 0
 }
 
 /*	【标准库 array 具有固定大小】
