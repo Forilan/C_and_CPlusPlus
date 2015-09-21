@@ -38,6 +38,9 @@
     <ClInclude Include="..\Classes\10-第10章-泛型算法.h">
       <Filter>Classes</Filter>
     </ClInclude>
+    <ClInclude Include="..\Classes\16-第16章-模板与泛型编程.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
