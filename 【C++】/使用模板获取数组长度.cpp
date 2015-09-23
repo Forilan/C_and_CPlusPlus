@@ -31,3 +31,14 @@ void func2(int (&A)[N]){
 /*
   数组只有在 sizeof，取地址&，和引用&的时候不会退化成指针
 */ 
+
+// 实际使用
+
+// 获取数组的长度
+/*
+	T 可以是 std::string， 也可以是 int 类型
+*/
+template<int N, typename T>
+int getArrayNumHXT(const T (&A)[N]){
+	return N;
+}  
