@@ -44,6 +44,9 @@
     <ClInclude Include="..\Classes\12-第12章-动态内存.h">
       <Filter>Classes</Filter>
     </ClInclude>
+    <ClInclude Include="..\Classes\13-第13章-拷贝控制.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">

@@ -17,14 +17,16 @@
 #include "04-第4章-表达式.h"
 #include "09-第9章-顺序容器.h"
 #include "10-第10章-泛型算法.h"
+#include "12-第12章-动态内存.h"
+#include "16-第16章-模板与泛型编程.h"
 #endif
 
-#include "16-第16章-模板与泛型编程.h"
+#include "12-第12章-动态内存.h"
 
 
 int _tmain(int argc, _TCHAR* argv[])
 {
-	study_nontype_parameter_template_compares();
+	study_shared_ptr_unsingle_use();
 
 	getchar();		// 防止 窗口闪掉
 
