@@ -26,7 +26,7 @@
 
 int _tmain(int argc, _TCHAR* argv[])
 {
-	study_shared_ptr_unsingle_use();
+	study_unique_ptr_single_use();
 
 	getchar();		// ·ÀÖ¹ ´°¿ÚÉÁµô
 

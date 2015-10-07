@@ -117,6 +117,29 @@ void study_shared_ptr_unsingle_use()		// shared_ptr 和 unique_ptr 都支持的�
 	std::cout << test2 << std::endl;
 }
 
+// 获得固定数组的大小。
+template <typename T, unsigned N>
+int getArrayLength(const T (&p1)[N])
+{
+	return N;
+}
+
+// 12.1.? unique_ptr 类 __________________________
+void study_unique_ptr_single_use()		
+{
+	float a[10] = {0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0};
+
+	std::unique_ptr<float[]> verticesImage(nullptr);
+	verticesImage.reset(a);
+
+	// 遍历数组
+	int j = getArrayLength(a);
+	for (int i = 0; i < j; ++i)
+	{
+		std::cout << verticesImage[i] << std::endl;
+	}
+}
+
 
 // 12.1.6 weak_ptr 类 __________________________
 /*
