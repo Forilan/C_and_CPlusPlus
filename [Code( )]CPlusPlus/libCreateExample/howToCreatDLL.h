@@ -113,7 +113,7 @@ int	GetData(int i, int j, int k)
 //						如何使用DLL
 // ------------------------------------------------------------------------------------------------------------------
 /*
-隐式链接
+隐式链接-【编译时把静态库 .lib 链接进来】
 
 这里有两个方法来载入一个DLL；一个方法是捷径另一个则相比要复杂些。
 捷径是只链接到你.lib 文件并将.dll文件置入你的新项目的路径中去。
@@ -129,7 +129,7 @@ int	GetData(int i, int j, int k)
 
 int main()
 {
-	GetDataPoint();
+	GetDataPoint();			//dll中的函数，在ShareDLL.h中声明
 	return(1);
 }
 
@@ -137,7 +137,7 @@ int main()
 
 
 /*
-显式链接
+显式链接-【运行时，把动态库.dll 链接进来】
 
 显式链接 的加载DLL的方法稍微有点复杂。你将需要函数指针和一些Windows函数。
 但是，通过这种载入DLLs的方法，你不需要DLL的.lib或头文件，而只需要DLL。
@@ -150,21 +150,24 @@ typedef void (*DLLFunc)(int);
 int main()
 {
 	DLLFunc dllFunc;
-	HINSTANCE hInstLibrary = LoadLibrary("DLLSample.dll");
+	HINSTANCE hInstLibrary = LoadLibrary("DLLSample.dll");		// 自己LoadLibary调入DLL文件到内存里面
 
 	if (hInstLibrary == NULL)
 	{
 		FreeLibrary(hInstLibrary);
 	}
-	dllFunc = (DLLFunc)GetProcAddress(hInstLibrary, "TestDLL");
+	dllFunc = (DLLFunc)GetProcAddress(hInstLibrary, "TestDLL");	// 再手工GetProcAddress获得对应函数
 	if (dllFunc == NULL)
 	{
 		FreeLibrary(hInstLibrary);
 	}
 	dllFunc(123);
 	std::cin.get();
-	FreeLibrary(hInstLibrary);
+	FreeLibrary(hInstLibrary);									// 最后要记得使用FreeLibrary函数释放内存
 	return(1);
 }
+
+
+
 
 #endif
