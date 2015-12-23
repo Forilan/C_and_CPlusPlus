@@ -163,6 +163,16 @@ printf("%s\n",&hello[0]);
 
 // __________________________ C++语言 __________________________
 
+
+void initString()
+{
+//string类的构造函数：
+
+string(const char *s);    //用c字符串s初始化
+string(int n,char c);     //用n个字符c初始化
+//此外，string类还支持默认构造函数和复制构造函数，如string s1；string s2="hello"；都是正确的写法。当构造的string太长而无法表达时会抛出length_error异常 ；
+}
+
 // 只调用 sprintf() 一次的时候  __________________________
 std::string EMQusetionManager::getValueFromString(int prefix,const char* suffix)
 {
