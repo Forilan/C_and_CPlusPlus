@@ -13,6 +13,9 @@ using namespace std;
 
 //#define MAX 2000000
 
+// 微秒的 用法
+//http://blog.csdn.net/morewindows/article/details/6854764
+
 const int maxIndex = 2000000;		//  其实要减1
 
 
