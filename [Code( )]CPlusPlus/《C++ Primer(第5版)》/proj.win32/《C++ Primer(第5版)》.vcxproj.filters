@@ -8,9 +8,6 @@
     <Filter Include="Classes">
       <UniqueIdentifier>{630d1b85-d879-4a33-8f2e-7136b48fb642}</UniqueIdentifier>
     </Filter>
-    <Filter Include="测试ZSJ">
-      <UniqueIdentifier>{450413ba-a1ca-4661-890a-f5c28d106ae9}</UniqueIdentifier>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
@@ -45,12 +42,6 @@
     </ClInclude>
     <ClInclude Include="..\Classes\13-第13章-拷贝控制.h">
       <Filter>Classes</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Classes\2char拼接成int.h">
-      <Filter>测试ZSJ</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Classes\200次for循环测量时间.h">
-      <Filter>测试ZSJ</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

@@ -25,7 +25,10 @@
     <ClInclude Include="targetver.h">
       <Filter>win32</Filter>
     </ClInclude>
-    <ClInclude Include="..\Classes\#pragmaUseExample.h">
+    <ClInclude Include="..\Classes\2char拼接成int.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\200次for循环测量时间.h">
       <Filter>Classes</Filter>
     </ClInclude>
   </ItemGroup>
