@@ -14,7 +14,7 @@ int char2int(const char & temp1, const char &  temp2)
 	return (stick << 8) | temp1;
 }
 
-
+ 
 
 // 二进制 111111111111111100000000
 // 十六进制 FFFF00
