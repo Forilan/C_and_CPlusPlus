@@ -7,23 +7,18 @@
 
 #include "2char拼接成int.h"
 #include "200次for循环测量时间.h"
+#include "char转换成unsignedint.h"
 
-#if 1
 int _tmain(int argc, _TCHAR* argv[])
 {
 
-#if 0
-	char a = 0x63;
-	char b = 0xFD;
-	int res = char2int(a,b);
-	cout << res;
-#endif
 
-
+	//	runMEforMain();
 	//	for200times();
+	runCharChangeInt();
+	
 
-	//getchar();		// 防止 窗口闪掉
-
+#if 0
 	int negaive = -2;
 	unsigned int er = 0 , ers = 0, erh = 0;
 
@@ -33,13 +28,16 @@ int _tmain(int argc, _TCHAR* argv[])
 
 	cout << ers << endl;
 	cout << h << endl;
-
 	cout << erh -2 << endl;
+#endif
 
+
+	//getchar();		// 防止 窗口闪掉
 	system("pause");
 
 	return 0;
 }
-#endif
+
+
 
 
