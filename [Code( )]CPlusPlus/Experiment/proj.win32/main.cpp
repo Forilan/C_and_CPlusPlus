@@ -13,9 +13,9 @@ int _tmain(int argc, _TCHAR* argv[])
 {
 
 
-	//	runMEforMain();
+	runMEforMain();
 	//	for200times();
-	runCharChangeInt();
+	//runCharChangeInt();
 	
 
 #if 0

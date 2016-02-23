@@ -11,14 +11,13 @@ int char2int(const char & temp1, const char &  temp2)
 {
 	int stick = temp2;
 	if ((stick & 0x80) == 1)	stick |= 0xFFFF00 ; // 如果标志位为负数,就把前面全部置为1.
-	return (stick << 8) | temp1;
+	return (stick << 8) | temp1;		// 传递 F4,00 时会出错。
 }
 
 // 16位单片机的int型内存数据转化成32位的
-short char2short(const char & temp1, const char &  temp2) 
+short char2short(const char & lowchar, const char &  highchar) 
 {
-	short stick = temp2;
-	return (stick << 8) | temp1;
+	return (highchar << 8) | (lowchar & 0xFF);
 }
 
 // 二进制 111111111111111100000000
@@ -27,12 +26,19 @@ short char2short(const char & temp1, const char &  temp2)
 
 void runMEforMain()
 {
-	char a = 0x63;
-	char b = 0xFD;
+	//char a = 0x63;
+	//char b = 0xFD;
+
+	char a = 0xF4;
+	char b = 0x00;
+
 	int res = char2int(a,b);
 	int res1 = (int)char2short(a,b);
-	cout << res << endl;
+	//cout << res << endl;
 	cout << res1 << endl;
+	cout << sizeof(char) << endl;
+	cout << sizeof(short) << endl;
+	cout << sizeof(int) << endl;
 }
 
 
