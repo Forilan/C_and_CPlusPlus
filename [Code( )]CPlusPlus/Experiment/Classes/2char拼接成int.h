@@ -30,12 +30,17 @@ void runMEforMain()
 	//char b = 0xFD;
 
 	char a = 0xF4;
-	char b = 0x00;
+	char b = 0x00;		// 输出 244 就对了
 
 	int res = char2int(a,b);
 	int res1 = (int)char2short(a,b);
+
+	a = 0x00;
+	b = 0xF4;		// 输出 -3072 就对了
+	int res2 = (int)char2short(a,b);
 	//cout << res << endl;
 	cout << res1 << endl;
+	cout << res2 << endl;
 	cout << sizeof(char) << endl;
 	cout << sizeof(short) << endl;
 	cout << sizeof(int) << endl;
