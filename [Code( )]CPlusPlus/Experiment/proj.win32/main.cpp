@@ -9,10 +9,10 @@
 #include "200次for循环测量时间.h"
 #include "char转换成unsignedint.h"
 
+
 int _tmain(int argc, _TCHAR* argv[])
 {
-
-
+	//
 	runMEforMain();
 	//	for200times();
 	//runCharChangeInt();

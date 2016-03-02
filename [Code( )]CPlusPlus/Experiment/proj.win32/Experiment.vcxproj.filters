@@ -34,5 +34,8 @@
     <ClInclude Include="..\Classes\char转换成unsignedint.h">
       <Filter>Classes</Filter>
     </ClInclude>
+    <ClInclude Include="..\Classes\enum如何确定枚举体个数.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
