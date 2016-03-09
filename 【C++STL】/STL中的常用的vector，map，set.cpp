@@ -47,6 +47,31 @@ vector<vector<vector<int>>> ivec(m, vector<vector<int>>(n, vector<int>())); //m*
 
 
 
+// __________________________ 在for,while循环中 删除元素 __________________________ 
+http://blog.csdn.net/gaoyingju/article/details/8301978
+
+// 把奇数都删除掉
+ std::vector<int>::iterator it = my_container.begin();
+　　         for (it != my_container.end();/**blank*/ ) {
+    	         if (*it % 2 == 1) {
+　　                  it = my_container.erase(it);
+　　              }
+　　              else{
+　　                   it++;
+　　              }
+　　         }
+
+// 使用 自增 操作。
+std::vector<int>::iterator it = my_container.begin();
+　　          for (it != my_container.end();/**blank*/ ) {
+    	          if (*it % 2 == 1) {
+　　                    my_container.erase(it++);
+　　               }
+　　               else{
+　　                    it++;
+　　               }
+　　          }
+
 
 
 
